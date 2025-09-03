@@ -1,11 +1,14 @@
 # Exam Instructions
 
 ## Setup Steps
-1. Clone the repository to your local machine
+1. Fork the repository to your GitHub account and clone your fork
    ```bash
-   git clone [repository-url]
+   git fork https://github.com/Cardinal-Alpha-Malaysia/ca_exam_question.git
+   git clone [your-fork-url]
    cd [repository-name]
    ```
+
+   When you have completed all questions, open a Pull Request to submit your work.
 
 2. Install required dependencies
    ```bash
@@ -29,7 +32,7 @@ This exam requires you to implement a series of operations involving API interac
 
 ## Tasks
 
-### 1. Study {url}
+### 1. Study [the documents](https://exam.cardinalalpha.com/)
 
 ### 2. Perform the following:
 #### 2a. Data Collection and Storage
