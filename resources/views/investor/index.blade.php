@@ -9,6 +9,9 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+                    <x-button class="mb-4 float-right" onclick="window.location='{{ route('investors.create') }}'">
+                        {{ __('Add Investor') }}
+                    </x-button>
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead class="bg-gray-100">
                             <tr>
@@ -19,7 +22,7 @@
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
                             @foreach ($investors as $investor)
-                                <tr class="hover:bg-gray-50">
+                                <tr class="hover:bg-gray-50" onclick="window.location='{{ route('investors.edit', $investor->id) }}'">
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $investor->name }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $investor->email }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $investor->contact_number }}</td>

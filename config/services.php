@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'external_api' => [
+        'base_url' => env('EXTERNAL_API', ''),
+        'candidate_email' => env('CANDIDATE_EMAIL', ''),
+    ],
+
 ];
